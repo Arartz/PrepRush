@@ -21,7 +21,7 @@ function Register() {
     }
 
     try {
-      await axios.post('http://localhost:4000/register', {
+      await axios.post('https://prepbackend-kc8b.onrender.com/register', {
         name,
         password,
       })

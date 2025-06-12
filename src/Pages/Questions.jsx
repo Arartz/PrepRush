@@ -108,7 +108,7 @@ function Questions() {
         console.log('Saving progress:', progressData)
 
         try {
-            const response = await axios.post('http://localhost:4000/save/progress', progressData, {
+            const response = await axios.post('https://prepbackend-kc8b.onrender.com/save/progress', progressData, {
                 headers: { 
                     Authorization: `Bearer ${token}`,
                     'Content-Type': 'application/json'

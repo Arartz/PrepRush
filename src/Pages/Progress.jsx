@@ -22,7 +22,7 @@ function Progress() {
             return
         }
 
-        axios.get('http://localhost:4000/get/progress', {
+        axios.get('https://prepbackend-kc8b.onrender.com/get/progress', {
             headers: { Authorization: `Bearer ${token}` }
         })
         .then(res => {

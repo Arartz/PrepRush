@@ -11,7 +11,7 @@ function Quiz() {
     useEffect(() => {
         setLoading(true)
         setError(null)
-        axios.get('http://localhost:4000/get/modules')
+        axios.get('https://prepbackend-kc8b.onrender.com/get/modules')
             .then(res => {
                 setModules(res.data)
                 setLoading(false)

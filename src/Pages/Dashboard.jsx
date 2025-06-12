@@ -22,7 +22,7 @@ function Dashboard() {
             return
         }
 
-        axios.get('http://localhost:4000/get/modules', {
+        axios.get('https://prepbackend-kc8b.onrender.com/get/modules', {
             headers: { Authorization: `Bearer ${token}` }
         })
         .then(res => {
@@ -40,7 +40,7 @@ function Dashboard() {
         const token = localStorage.getItem('token')
         if (!token) return
 
-        axios.get('http://localhost:4000/get/progress', {
+        axios.get('https://prepbackend-kc8b.onrender.com/get/progress', {
             headers: { Authorization: `Bearer ${token}` }
         })
         .then(res => {

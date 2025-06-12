@@ -14,7 +14,7 @@ function Lessons() {
     useEffect(() => {
         setLoading(true)
         setError(null)
-        axios.get(`http://localhost:4000/get/lessons/${id}`)
+        axios.get(`https://prepbackend-kc8b.onrender.com/get/lessons/${id}`)
             .then(res => {
                 setLessons(res.data)
                 setLoading(false)

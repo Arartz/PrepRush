@@ -14,7 +14,7 @@ function Login() {
     setError('')
     setLoading(true)
     try {
-      const res = await axios.post('http://localhost:4000/login', {
+      const res = await axios.post('https://prepbackend-kc8b.onrender.com/login', {
         name,
         password,
       })
