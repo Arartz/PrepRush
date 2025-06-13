@@ -200,12 +200,8 @@ function Dashboard() {
                                         {module.module_name}
                                     </h3>
                                     <span className={`text-xs font-medium px-2 py-1 rounded-full ${getDifficultyColor(module.difficulty_level)}`}>
-                                        {module.difficulty_level || 'Unrated'}
                                     </span>
                                 </div>
-
-                                <p className="text-gray-400 text-sm mb-6">{module.description || 'No description available'}</p>
-
                                 <div className="flex items-center justify-between">
                                     <div className="flex items-center space-x-2">
                                         <div className="relative w-12 h-12">
