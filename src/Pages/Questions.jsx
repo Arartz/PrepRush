@@ -26,7 +26,7 @@ function Questions() {
             return
         }
 
-        axios.get(`http://localhost:4000/get/next-questions/${id}`, {
+        axios.get(`https://prepbackend-kc8b.onrender.com/get/next-questions/${id}`, {
             headers: { Authorization: `Bearer ${token}` }
         })
         .then(res => {
